@@ -1,0 +1,14 @@
+.button-container button {
+  padding: 30px;
+  background-color: var(--primary-color-blue);
+  font-family: var(--font-montserrat);
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.button-container button:hover {
+  color: var(--primary-color-green);
+}
