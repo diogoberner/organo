@@ -1,0 +1,46 @@
+.card {
+  height: 270px;
+  width: 260px;
+  min-width: 200px;
+  min-height: 220px;
+  max-width: 300px;
+  max-height: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: hidden;
+}
+
+/* .card__rectangle {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  top: 0;
+  left: 0;
+} */
+
+.programming {
+  background: linear-gradient(180deg, var(--prog-color) 40%, #fff 40%);
+}
+.front-end {
+  background: linear-gradient(180deg, var(--front-color) 40%, #fff 40%);
+}
+.data-science {
+  background: linear-gradient(180deg, var(--data-color) 40%, #fff 40%);
+}
+.devops {
+  background: linear-gradient(180deg, var(--dev-color) 40%, #fff 40%);
+}
+.ux-design {
+  background: linear-gradient(180deg, var(--ux-color) 40%, #fff 40%);
+}
+.mobile {
+  background: linear-gradient(180deg, var(--mob-color) 40%, #fff 40%);
+}
+.innovation-management {
+  background: linear-gradient(180deg, var(--inov-color) 40%, #fff 40%);
+}

@@ -1,9 +1,8 @@
 import FormInput from "../FormInput";
 import "./Form.css";
-import teamList from "../teamList.js";
 import FormButton from "../FormButton/index.jsx";
 
-const Form = () => {
+const Form = ({ teamList }) => {
   return (
     <form className="form">
       <h2>Preencha os dados para criar o card do colaborador.</h2>
