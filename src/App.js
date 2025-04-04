@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <Banner />
       <Form teamList={teamList} />
-      <TeamDiv teamList={teamList} />
+      {teamList.map((team, index) => {
+        return <TeamDiv key={index} team={team} />;
+      })}
     </div>
   );
 }
