@@ -1,4 +1,35 @@
 .team-div {
   width: 100%;
   padding: 35px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-div.programming {
+  background-color: var(--prog-color-bg);
+}
+
+.team-div.front-end {
+  background-color: var(--front-color-bg);
+}
+
+.team-div.data-science {
+  background-color: var(--data-color-bg);
+}
+
+.team-div.devops {
+  background-color: var(--dev-color-bg);
+}
+
+.team-div.ux-design {
+  background-color: var(--ux-color-bg);
+}
+
+.team-div.mobile {
+  background-color: var(--mob-color-bg);
+}
+
+.team-div.innovation-management {
+  background-color: var(--inov-color-bg);
 }

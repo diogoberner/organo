@@ -15,32 +15,24 @@
   overflow: hidden;
 }
 
-/* .card__rectangle {
-  position: absolute;
-  height: 30%;
-  width: 100%;
-  top: 0;
-  left: 0;
-} */
-
-.programming {
-  background: linear-gradient(180deg, var(--prog-color) 40%, #fff 40%);
+.card.programming {
+  background: linear-gradient(180deg, var(--prog-color) 33%, #fff 33%);
 }
-.front-end {
-  background: linear-gradient(180deg, var(--front-color) 40%, #fff 40%);
+.card.front-end {
+  background: linear-gradient(180deg, var(--front-color) 33%, #fff 33%);
 }
-.data-science {
-  background: linear-gradient(180deg, var(--data-color) 40%, #fff 40%);
+.card.data-science {
+  background: linear-gradient(180deg, var(--data-color) 33%, #fff 33%);
 }
-.devops {
-  background: linear-gradient(180deg, var(--dev-color) 40%, #fff 40%);
+.card.devops {
+  background: linear-gradient(180deg, var(--dev-color) 33%, #fff 33%);
 }
-.ux-design {
-  background: linear-gradient(180deg, var(--ux-color) 40%, #fff 40%);
+.card.ux-design {
+  background: linear-gradient(180deg, var(--ux-color) 33%, #fff 33%);
 }
-.mobile {
-  background: linear-gradient(180deg, var(--mob-color) 40%, #fff 40%);
+.card.mobile {
+  background: linear-gradient(180deg, var(--mob-color) 33%, #fff 33%);
 }
-.innovation-management {
-  background: linear-gradient(180deg, var(--inov-color) 40%, #fff 40%);
+.card.innovation-management {
+  background: linear-gradient(180deg, var(--inov-color) 33%, #fff 33%);
 }

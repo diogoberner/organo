@@ -1,5 +1,4 @@
 import Banner from "./components/Banner/Banner";
-import CardContainer from "./components/CardContainer";
 import Form from "./components/Form";
 import TeamDiv from "./components/TeamDiv";
 
