@@ -42,3 +42,7 @@
 .innovation-management .title::after {
   background-color: var(--inov-color);
 }
+
+.section-header__title.title::after {
+  background-color: var(--primary-color-blue);
+}

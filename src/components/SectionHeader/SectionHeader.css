@@ -1,0 +1,19 @@
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10% 40px;
+  position: relative;
+}
+
+.section-header__title {
+  color: var(--primary-color-blue);
+}
+
+.section-header__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background-color: transparent;
+}
