@@ -1,0 +1,28 @@
+.footer {
+  background: url("../../../public/images/fundo.png");
+  background-color: var(--primary-color-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  padding: 0 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__social-links {
+  display: flex;
+  gap: 35px;
+}
+
+.footer__logo {
+  height: 63px;
+}
+
+.footer__dev {
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
