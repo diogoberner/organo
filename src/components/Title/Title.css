@@ -12,7 +12,8 @@
   background-color: black;
   display: block;
   height: 4px;
-  width: 32px;
+  width: 20%;
+  min-width: 32px;
 }
 
 .programming .title::after {

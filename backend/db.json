@@ -1,0 +1,165 @@
+{
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "role": "Desenvolvedor Full Stack",
+      "category": "Programação",
+      "imgURL": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mariana Costa",
+      "role": "Desenvolvedora Backend",
+      "category": "Programação",
+      "imgURL": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Almeida",
+      "role": "Desenvolvedor Frontend",
+      "category": "Programação",
+      "imgURL": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Fernanda Rocha",
+      "role": "Engenheira de Software",
+      "category": "Programação",
+      "imgURL": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Lucas Martins",
+      "role": "UI Developer",
+      "category": "Front-End",
+      "imgURL": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Ana Beatriz",
+      "role": "Desenvolvedora React",
+      "category": "Front-End",
+      "imgURL": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Thiago Souza",
+      "role": "Desenvolvedor Angular",
+      "category": "Front-End",
+      "imgURL": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Roberta Mendes",
+      "role": "Cientista de Dados",
+      "category": "Data Science",
+      "imgURL": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Fernando Nogueira",
+      "role": "Analista de Machine Learning",
+      "category": "Data Science",
+      "imgURL": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Vanessa Ribeiro",
+      "role": "Engenheira de Dados",
+      "category": "Data Science",
+      "imgURL": "https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Bruno Henrique",
+      "role": "Engenheiro DevOps",
+      "category": "DevOps",
+      "imgURL": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Ricardo Farias",
+      "role": "Administrador de Sistemas",
+      "category": "DevOps",
+      "imgURL": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Tatiane Lima",
+      "role": "SRE",
+      "category": "DevOps",
+      "imgURL": "https://randomuser.me/api/portraits/women/13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Diego Santos",
+      "role": "Especialista em Kubernetes",
+      "category": "DevOps",
+      "imgURL": "https://randomuser.me/api/portraits/men/14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Gabriela Figueiredo",
+      "role": "UX Designer",
+      "category": "UX e Design",
+      "imgURL": "https://randomuser.me/api/portraits/women/15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Leonardo Rocha",
+      "role": "UI Designer",
+      "category": "UX e Design",
+      "imgURL": "https://randomuser.me/api/portraits/men/16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Carla Monteiro",
+      "role": "Pesquisadora UX",
+      "category": "UX e Design",
+      "imgURL": "https://randomuser.me/api/portraits/women/17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Felipe Oliveira",
+      "role": "Desenvolvedor iOS",
+      "category": "Mobile",
+      "imgURL": "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Amanda Torres",
+      "role": "Desenvolvedora Android",
+      "category": "Mobile",
+      "imgURL": "https://randomuser.me/api/portraits/women/19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Pedro Gomes",
+      "role": "Engenheiro Mobile",
+      "category": "Mobile",
+      "imgURL": "https://randomuser.me/api/portraits/men/20.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Rodrigo Campos",
+      "role": "Gerente de Produto",
+      "category": "Inovação e Gestão",
+      "imgURL": "https://randomuser.me/api/portraits/men/21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Juliana Moreira",
+      "role": "Líder de Inovação",
+      "category": "Inovação e Gestão",
+      "imgURL": "https://randomuser.me/api/portraits/women/22.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Alexandre Souza",
+      "role": "Scrum Master",
+      "category": "Inovação e Gestão",
+      "imgURL": "https://randomuser.me/api/portraits/men/23.jpg"
+    }
+  ]
+}
