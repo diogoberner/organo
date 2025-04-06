@@ -1,11 +1,11 @@
 import Card from "../Card";
 import "./CardContainer.css";
 
-const CardContainer = ({ teamList, className }) => {
+const CardContainer = ({ membersList, className }) => {
   return (
     <>
       <section className="card-container">
-        {teamList.map((teamMember, index) => {
+        {membersList.map((teamMember, index) => {
           return (
             <Card key={index} teamMember={teamMember} className={className} />
           );

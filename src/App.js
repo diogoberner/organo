@@ -6,13 +6,22 @@ import Form from "./components/Form";
 import SectionHeader from "./components/SectionHeader";
 import TeamDiv from "./components/TeamDiv";
 
-import teamList from "./components/teamList";
 import { getTeamMembers } from "./api/teamServices";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
 
   const [teamMembers, setTeamMembers] = useState([]);
+
+  const categoryClassMap = {
+    Programação: "programming",
+    "Front-End": "front-end",
+    "Data Science": "data-science",
+    DevOps: "devops",
+    "UX e Design": "ux-design",
+    Mobile: "mobile",
+    "Inovação e Gestão": "innovation-management",
+  };
 
   useEffect(() => {
     getTeamMembers()
@@ -25,10 +34,20 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Form teamList={teamList} showForm={showForm} />
+      <Form categories={categories} showForm={showForm} />
       <SectionHeader setShowForm={setShowForm} showForm={showForm} />
-      {teamList.map((team, index) => {
-        return <TeamDiv key={index} team={team} />;
+      {categories.map((category) => {
+        const membersInCategory = teamMembers.filter(
+          (member) => member.category === category
+        );
+        return (
+          <TeamDiv
+            key={category}
+            membersInCategory={membersInCategory}
+            category={category}
+            className={categoryClassMap[category]}
+          />
+        );
       })}
       <Footer />
     </div>

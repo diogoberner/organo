@@ -1,19 +1,20 @@
 import "./FormInput.css";
 
-const FormInput = ({ label, placeholder, teamList }) => {
+const FormInput = ({ label, placeholder, categories }) => {
   return (
     <div className="input-container">
       <label>{label}</label>
-      {!teamList ? (
+      {!categories ? (
         <input type={"text"} placeholder={placeholder} />
       ) : (
         <>
-          <input list="teamList" />
-          <datalist id="teamList">
-            {teamList.map((teamName, index) => {
+          <input list="categories" />
+          <datalist id="categories">
+            {categories.map((category, index) => {
+              console.log(category);
               return (
-                <option key={index} value={teamName.category}>
-                  {teamName.category}
+                <option key={index} value={category}>
+                  {category}
                 </option>
               );
             })}

@@ -2,7 +2,7 @@ import FormInput from "../FormInput";
 import "./Form.css";
 import FormButton from "../FormButton/index.jsx";
 
-const Form = ({ teamList, showForm }) => {
+const Form = ({ categories, showForm }) => {
   return (
     <>
       {showForm && (
@@ -14,12 +14,7 @@ const Form = ({ teamList, showForm }) => {
             label="Imagem"
             placeholder="Informe o endereço da imagem"
           />
-          <FormInput
-            label="Time"
-            placeholder=""
-            type="select"
-            teamList={teamList}
-          />
+          <FormInput label="Time" placeholder="" categories={categories} />
           <FormButton />
         </form>
       )}
