@@ -24,9 +24,17 @@ function App() {
   };
 
   useEffect(() => {
-    getTeamMembers()
-      .then((response) => setTeamMembers(response.data))
-      .catch((err) => console.error("Erro ao buscar membros", err));
+    const fetchData = async () => {
+      try {
+        const data = await getTeamMembers();
+        setTeamMembers(data);
+      } catch (error) {
+        console.error("Erro ao buscar membros", error);
+        return;
+      }
+    };
+
+    fetchData();
   }, []);
 
   const categories = [...new Set(teamMembers.map((m) => m.category))];
