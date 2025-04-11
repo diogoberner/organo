@@ -1,13 +1,21 @@
+import { useContext } from "react";
 import { deleteMember } from "../../api/teamServices";
 import "./Card.css";
+import { TeamContext } from "../../context/TeamContext.js";
 
 const Card = ({ teamMember, className }) => {
-  const handleDelete = (e) => {
-    const currentCard = e.currentTarget.closest(".card");
-    const currentId = currentCard.getAttribute("data-id");
+  const { teamMembers, setTeamMembers } = useContext(TeamContext);
 
-    deleteMember(currentId);
-    currentCard.remove();
+  const handleDelete = async (currentId) => {
+    try {
+      await deleteMember(currentId);
+      const updatedMembers = teamMembers.filter(
+        (member) => member.id !== currentId
+      );
+      setTeamMembers(updatedMembers);
+    } catch (error) {
+      console.error("Erro ao deletar membro:", error);
+    }
   };
 
   if (!teamMember) {
@@ -34,7 +42,7 @@ const Card = ({ teamMember, className }) => {
           <img
             src="/images/delete-button.png"
             alt={`Botão de deletar o ${teamMember.name}`}
-            onClick={handleDelete}
+            onClick={() => handleDelete(teamMember.id)}
           />
         </button>
       </div>

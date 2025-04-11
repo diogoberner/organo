@@ -1,76 +1,6 @@
 {
   "teamMembers": [
     {
-      "id": 1,
-      "name": "João Silva",
-      "role": "Desenvolvedor Full Stack",
-      "category": "Programação",
-      "imgURL": "https://randomuser.me/api/portraits/men/1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Mariana Costa",
-      "role": "Desenvolvedora Backend",
-      "category": "Programação",
-      "imgURL": "https://randomuser.me/api/portraits/women/2.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Carlos Almeida",
-      "role": "Desenvolvedor Frontend",
-      "category": "Programação",
-      "imgURL": "https://randomuser.me/api/portraits/men/3.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Fernanda Rocha",
-      "role": "Engenheira de Software",
-      "category": "Programação",
-      "imgURL": "https://randomuser.me/api/portraits/women/4.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Lucas Martins",
-      "role": "UI Developer",
-      "category": "Front-End",
-      "imgURL": "https://randomuser.me/api/portraits/men/5.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Ana Beatriz",
-      "role": "Desenvolvedora React",
-      "category": "Front-End",
-      "imgURL": "https://randomuser.me/api/portraits/women/6.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Thiago Souza",
-      "role": "Desenvolvedor Angular",
-      "category": "Front-End",
-      "imgURL": "https://randomuser.me/api/portraits/men/7.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Roberta Mendes",
-      "role": "Cientista de Dados",
-      "category": "Data Science",
-      "imgURL": "https://randomuser.me/api/portraits/women/8.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Fernando Nogueira",
-      "role": "Analista de Machine Learning",
-      "category": "Data Science",
-      "imgURL": "https://randomuser.me/api/portraits/men/9.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Vanessa Ribeiro",
-      "role": "Engenheira de Dados",
-      "category": "Data Science",
-      "imgURL": "https://randomuser.me/api/portraits/women/10.jpg"
-    },
-    {
       "id": 11,
       "name": "Bruno Henrique",
       "role": "Engenheiro DevOps",
@@ -153,20 +83,6 @@
       "role": "Scrum Master",
       "category": "Inovação e Gestão",
       "imgURL": "https://randomuser.me/api/portraits/men/23.jpg"
-    },
-    {
-      "name": "Diogo",
-      "role": "Programador Sênior",
-      "imgURL": "https://randomuser.me/api/portraits/men/94.jpg",
-      "category": "Front-End",
-      "id": 24
-    },
-    {
-      "name": "Daniel Silva",
-      "role": "Programador Júnior",
-      "imgURL": "https://randomuser.me/api/portraits/men/80.jpg",
-      "category": "Data Science",
-      "id": 26
     },
     {
       "name": "Camila Mayara",

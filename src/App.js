@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer";
@@ -7,11 +7,12 @@ import SectionHeader from "./components/SectionHeader";
 import TeamDiv from "./components/TeamDiv";
 
 import { getTeamMembers } from "./api/teamServices";
+import { TeamContext } from "./context/TeamContext.js";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
 
-  const [teamMembers, setTeamMembers] = useState([]);
+  const { teamMembers, setTeamMembers } = useContext(TeamContext);
 
   const categoryClassMap = {
     Programação: "programming",
@@ -35,9 +36,11 @@ function App() {
     };
 
     fetchData();
-  }, []);
+  }, [setTeamMembers]);
 
-  const categories = [...new Set(teamMembers.map((m) => m.category))];
+  const categories = useMemo(() => {
+    return [...new Set(teamMembers.map((m) => m.category))];
+  }, [teamMembers]);
 
   return (
     <div className="App">
