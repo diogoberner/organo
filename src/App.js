@@ -42,7 +42,13 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Form categories={categories} showForm={showForm} />
+      <Form
+        categories={categories}
+        showForm={showForm}
+        setShowForm={setShowForm}
+        teamMembers={teamMembers}
+        setTeamMembers={setTeamMembers}
+      />
       <SectionHeader setShowForm={setShowForm} showForm={showForm} />
       {categories.map((category) => {
         const membersInCategory = teamMembers.filter(

@@ -49,6 +49,44 @@
   font-weight: 400;
 }
 
+.card__buttons {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card__buttons {
+  display: flex;
+  padding: 10px;
+}
+
+.card__edit,
+.card__delete {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.card__edit:hover,
+.card__delete:hover {
+  transform: rotateZ(10deg);
+}
+
+.card__edit img,
+.card__delete img {
+  width: 100%;
+  height: 100%;
+}
+
 .card.programming {
   background: linear-gradient(180deg, var(--prog-color) 33%, #fff 33%);
 }

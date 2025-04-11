@@ -3,8 +3,15 @@ import { useState } from "react";
 import "./Form.css";
 import FormInput from "../FormInput";
 import FormButton from "../FormButton/index.jsx";
+import { createNewMember } from "../../api/teamServices.js";
 
-const Form = ({ categories, showForm }) => {
+const Form = ({
+  categories,
+  showForm,
+  teamMembers,
+  setTeamMembers,
+  setShowForm,
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     role: "",
@@ -18,6 +25,15 @@ const Form = ({ categories, showForm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    try {
+      createNewMember(formData);
+      setTeamMembers([...teamMembers, formData]);
+      setFormData({ name: "", role: "", imgURL: "", category: "" });
+      setShowForm(!setShowForm);
+    } catch (error) {
+      console.error("Falha na criação do card.", error);
+    }
   };
 
   return (

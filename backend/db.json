@@ -134,13 +134,6 @@
       "imgURL": "https://randomuser.me/api/portraits/women/19.jpg"
     },
     {
-      "id": 20,
-      "name": "Pedro Gomes",
-      "role": "Engenheiro Mobile",
-      "category": "Mobile",
-      "imgURL": "https://randomuser.me/api/portraits/men/20.jpg"
-    },
-    {
       "id": 21,
       "name": "Rodrigo Campos",
       "role": "Gerente de Produto",
@@ -160,6 +153,34 @@
       "role": "Scrum Master",
       "category": "Inovação e Gestão",
       "imgURL": "https://randomuser.me/api/portraits/men/23.jpg"
+    },
+    {
+      "name": "Diogo",
+      "role": "Programador Sênior",
+      "imgURL": "https://randomuser.me/api/portraits/men/94.jpg",
+      "category": "Front-End",
+      "id": 24
+    },
+    {
+      "name": "Daniel Silva",
+      "role": "Programador Júnior",
+      "imgURL": "https://randomuser.me/api/portraits/men/80.jpg",
+      "category": "Data Science",
+      "id": 26
+    },
+    {
+      "name": "Camila Mayara",
+      "role": "Enfermeira Chefe",
+      "imgURL": "https://randomuser.me/api/portraits/women/75.jpg",
+      "category": "Inovação e Gestão",
+      "id": 27
+    },
+    {
+      "name": "Djalma Souza",
+      "role": "Gerente Regional",
+      "imgURL": "https://randomuser.me/api/portraits/men/22.jpg",
+      "category": "UX e Design",
+      "id": 28
     }
   ]
 }
