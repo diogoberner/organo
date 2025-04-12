@@ -7,6 +7,7 @@ const FormInput = ({
   value,
   name,
   onChange,
+  ref,
 }) => {
   return (
     <div className="input-container">
@@ -18,6 +19,7 @@ const FormInput = ({
           value={value}
           onChange={onChange}
           name={name}
+          ref={ref}
         />
       ) : (
         <>

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 
 import "./Form.css";
 import FormInput from "../FormInput";
@@ -9,6 +9,8 @@ import { TeamContext } from "../../context/TeamContext.js";
 import { ALL_CATEGORIES as categories } from "../../data/categories.js";
 
 const Form = () => {
+  const formRef = useRef(null);
+
   const {
     teamMembers,
     setTeamMembers,
@@ -45,6 +47,13 @@ const Form = () => {
     }
   };
 
+  useEffect(() => {
+    if (showForm && formRef.current) {
+      formRef.current.focus();
+      console.log(formRef);
+    }
+  }, [showForm, editId]);
+
   return (
     <>
       {showForm && (
@@ -56,6 +65,7 @@ const Form = () => {
             value={formData.name}
             name="name"
             onChange={handleChange}
+            ref={formRef}
           />
           <FormInput
             label="Cargo"
