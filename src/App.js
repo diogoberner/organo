@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo } from "react";
 
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer";
@@ -9,20 +9,11 @@ import TeamDiv from "./components/TeamDiv";
 import { getTeamMembers } from "./api/teamServices";
 import { TeamContext } from "./context/TeamContext.js";
 
+import { categoryClassMap } from "./data/categories.js";
+
 function App() {
-  const [showForm, setShowForm] = useState(false);
-
+  const { showForm, setShowForm } = useContext(TeamContext);
   const { teamMembers, setTeamMembers } = useContext(TeamContext);
-
-  const categoryClassMap = {
-    Programação: "programming",
-    "Front-End": "front-end",
-    "Data Science": "data-science",
-    DevOps: "devops",
-    "UX e Design": "ux-design",
-    Mobile: "mobile",
-    "Inovação e Gestão": "innovation-management",
-  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,14 +36,8 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Form
-        categories={categories}
-        showForm={showForm}
-        setShowForm={setShowForm}
-        teamMembers={teamMembers}
-        setTeamMembers={setTeamMembers}
-      />
-      <SectionHeader setShowForm={setShowForm} showForm={showForm} />
+      <Form showForm={showForm} setShowForm={setShowForm} />
+      <SectionHeader showForm={showForm} setShowForm={setShowForm} />
       {categories.map((category) => {
         const membersInCategory = teamMembers.filter(
           (member) => member.category === category

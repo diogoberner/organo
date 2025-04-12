@@ -1,9 +1,9 @@
 import "./FormButton.css";
 
-const FormButton = () => {
+const FormButton = ({ label }) => {
   return (
     <div className="button-container">
-      <button>Criar card</button>
+      <button>{label}</button>
     </div>
   );
 };

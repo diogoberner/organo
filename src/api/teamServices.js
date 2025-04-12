@@ -16,3 +16,8 @@ export const deleteMember = async (id) => {
   const response = await axios.delete(`${BASE_URL}/${id}`);
   return response.data;
 };
+
+export const editMember = async (id, updatedMember) => {
+  const response = await axios.put(`${BASE_URL}/${id}`, updatedMember);
+  return response.data;
+};

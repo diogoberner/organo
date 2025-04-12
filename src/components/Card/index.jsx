@@ -4,7 +4,8 @@ import "./Card.css";
 import { TeamContext } from "../../context/TeamContext.js";
 
 const Card = ({ teamMember, className }) => {
-  const { teamMembers, setTeamMembers } = useContext(TeamContext);
+  const { teamMembers, setTeamMembers, setFormData, setShowForm, setEditId } =
+    useContext(TeamContext);
 
   const handleDelete = async (currentId) => {
     try {
@@ -14,7 +15,18 @@ const Card = ({ teamMember, className }) => {
       );
       setTeamMembers(updatedMembers);
     } catch (error) {
-      console.error("Erro ao deletar membro:", error);
+      console.error("Erro ao deletar membro do time:", error);
+    }
+  };
+
+  const handleEdit = async (currentId) => {
+    const currentMember = teamMembers.find((member) => member.id === currentId);
+    setFormData(currentMember);
+    setShowForm(true);
+    setEditId(currentId);
+    try {
+    } catch (error) {
+      console.error("Erro ao encontrar membro do time:", error);
     }
   };
 
@@ -36,6 +48,7 @@ const Card = ({ teamMember, className }) => {
           <img
             src="/images/edit-button.png"
             alt={`Botão de editar o ${teamMember.name}`}
+            onClick={() => handleEdit(teamMember.id)}
           />
         </button>
         <button className="card__delete">

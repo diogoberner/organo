@@ -78,13 +78,6 @@
       "imgURL": "https://randomuser.me/api/portraits/women/22.jpg"
     },
     {
-      "id": 23,
-      "name": "Alexandre Souza",
-      "role": "Scrum Master",
-      "category": "Inovação e Gestão",
-      "imgURL": "https://randomuser.me/api/portraits/men/23.jpg"
-    },
-    {
       "name": "Camila Mayara",
       "role": "Enfermeira Chefe",
       "imgURL": "https://randomuser.me/api/portraits/women/75.jpg",

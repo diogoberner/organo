@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useContext } from "react";
 
 import "./Form.css";
 import FormInput from "../FormInput";
 import FormButton from "../FormButton/index.jsx";
-import { createNewMember } from "../../api/teamServices.js";
+import { createNewMember, editMember } from "../../api/teamServices.js";
+import { TeamContext } from "../../context/TeamContext.js";
 
-const Form = ({
-  categories,
-  showForm,
-  teamMembers,
-  setTeamMembers,
-  setShowForm,
-}) => {
-  const [formData, setFormData] = useState({
-    name: "",
-    role: "",
-    imgURL: "",
-    category: "",
-  });
+import { ALL_CATEGORIES as categories } from "../../data/categories.js";
+
+const Form = () => {
+  const {
+    teamMembers,
+    setTeamMembers,
+    formData,
+    setFormData,
+    showForm,
+    setShowForm,
+    editId,
+  } = useContext(TeamContext);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,12 +27,21 @@ const Form = ({
     e.preventDefault();
 
     try {
-      createNewMember(formData);
-      setTeamMembers([...teamMembers, formData]);
+      if (editId) {
+        editMember(editId, formData);
+        const updatedMembers = teamMembers.map((member) =>
+          member.id === editId ? { ...member, ...formData } : member
+        );
+        setTeamMembers(updatedMembers);
+      } else {
+        createNewMember(formData);
+        setTeamMembers([...teamMembers, formData]);
+      }
       setFormData({ name: "", role: "", imgURL: "", category: "" });
       setShowForm(!setShowForm);
     } catch (error) {
       console.error("Falha na criação do card.", error);
+      return;
     }
   };
 
@@ -70,7 +79,11 @@ const Form = ({
             name="category"
             onChange={handleChange}
           />
-          <FormButton />
+          {editId ? (
+            <FormButton label="Editar card" />
+          ) : (
+            <FormButton label="Criar card" />
+          )}
         </form>
       )}
     </>
