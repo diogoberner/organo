@@ -9,7 +9,7 @@ import TeamDiv from "./components/TeamDiv";
 import { getTeamMembers } from "./api/teamServices";
 import { TeamContext } from "./context/TeamContext.js";
 
-import { categoryClassMap } from "./data/categories.js";
+import { ALL_CATEGORIES } from "./data/categories.js";
 
 function App() {
   const { showForm, setShowForm } = useContext(TeamContext);
@@ -30,7 +30,10 @@ function App() {
   }, [setTeamMembers]);
 
   const categories = useMemo(() => {
-    return [...new Set(teamMembers.map((m) => m.category))];
+    const uniqueCategories = [...new Set(teamMembers.map((m) => m.category))];
+    return ALL_CATEGORIES.map((c) => c.category).filter((category) =>
+      uniqueCategories.includes(category)
+    );
   }, [teamMembers]);
 
   return (
@@ -47,7 +50,6 @@ function App() {
             key={category}
             membersInCategory={membersInCategory}
             category={category}
-            className={categoryClassMap[category]}
           />
         );
       })}

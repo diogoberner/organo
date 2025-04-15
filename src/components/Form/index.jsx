@@ -50,7 +50,6 @@ const Form = () => {
   useEffect(() => {
     if (showForm && formRef.current) {
       formRef.current.focus();
-      console.log(formRef);
     }
   }, [showForm, editId]);
 
@@ -84,7 +83,7 @@ const Form = () => {
           <FormInput
             label="Time"
             placeholder=""
-            categories={categories}
+            categories={categories.map((c) => c.category)}
             value={formData.category}
             name="category"
             onChange={handleChange}

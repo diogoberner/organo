@@ -1,21 +1,25 @@
-// src/data/categories.js
-
 export const ALL_CATEGORIES = [
-  "Programação",
-  "Front-End",
-  "Data Science",
-  "DevOps",
-  "UX e Design",
-  "Mobile",
-  "Inovação e Gestão",
+  {
+    category: "Programação",
+    primaryColor: "#57C278",
+    secondaryColor: "#D9F7E9",
+  },
+  { category: "Front-End", primaryColor: "#82CFFA", secondaryColor: "#E8F8FF" },
+  {
+    category: "Data Science",
+    primaryColor: "#A6D157",
+    secondaryColor: "#F0F8E2",
+  },
+  { category: "DevOps", primaryColor: "#E06B69", secondaryColor: "#FDE7E8" },
+  {
+    category: "UX e Design",
+    primaryColor: "#DB6EBF",
+    secondaryColor: "#FAE9F5",
+  },
+  { category: "Mobile", primaryColor: "#ffba05", secondaryColor: "#fff5d9" },
+  {
+    category: "Inovação e Gestão",
+    primaryColor: "#ff8a29",
+    secondaryColor: "#ffeedf",
+  },
 ];
-
-export const categoryClassMap = {
-  Programação: "programming",
-  "Front-End": "front-end",
-  "Data Science": "data-science",
-  DevOps: "devops",
-  "UX e Design": "ux-design",
-  Mobile: "mobile",
-  "Inovação e Gestão": "innovation-management",
-};

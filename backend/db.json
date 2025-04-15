@@ -90,6 +90,27 @@
       "imgURL": "https://randomuser.me/api/portraits/men/22.jpg",
       "category": "UX e Design",
       "id": 28
+    },
+    {
+      "id": "1iolgrkr30de86fe626caf7",
+      "name": "Diego Santos",
+      "role": "Desenvolvedor Sênior",
+      "imgURL": "https://randomuser.me/api/portraits/men/17.jpg",
+      "category": "Programação"
+    },
+    {
+      "name": "Michael jackson",
+      "role": "Cantor Profissional",
+      "imgURL": "https://randomuser.me/api/portraits/men/19.jpg",
+      "category": "Front-End",
+      "id": 29
+    },
+    {
+      "name": "Irineu Santos",
+      "role": "Você não sabe e nem Eu",
+      "imgURL": "https://randomuser.me/api/portraits/men/14.jpg",
+      "category": "Data Science",
+      "id": 30
     }
   ]
 }

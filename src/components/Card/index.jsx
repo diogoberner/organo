@@ -3,7 +3,7 @@ import { deleteMember } from "../../api/teamServices";
 import "./Card.css";
 import { TeamContext } from "../../context/TeamContext.js";
 
-const Card = ({ teamMember, className }) => {
+const Card = ({ teamMember }) => {
   const { teamMembers, setTeamMembers, setFormData, setShowForm, setEditId } =
     useContext(TeamContext);
 
@@ -35,7 +35,13 @@ const Card = ({ teamMember, className }) => {
   }
 
   return (
-    <div data-id={teamMember.id} className={`card ${className}`}>
+    <div
+      data-id={teamMember.id}
+      className={`card`}
+      style={{
+        background: "linear-gradient(180deg, var(--prog-color) 33%, #fff 33%)",
+      }}
+    >
       <div className="card__image">
         <img src={teamMember.imgURL} alt={`Foto do ${teamMember.name}`} />
       </div>

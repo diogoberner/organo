@@ -6,9 +6,7 @@ const CardContainer = ({ membersList, className }) => {
     <>
       <section className="card-container">
         {membersList.map((teamMember, index) => {
-          return (
-            <Card key={index} teamMember={teamMember} className={className} />
-          );
+          return <Card key={index} teamMember={teamMember} />;
         })}
       </section>
       ;

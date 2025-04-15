@@ -86,25 +86,3 @@
   width: 100%;
   height: 100%;
 }
-
-.card.programming {
-  background: linear-gradient(180deg, var(--prog-color) 33%, #fff 33%);
-}
-.card.front-end {
-  background: linear-gradient(180deg, var(--front-color) 33%, #fff 33%);
-}
-.card.data-science {
-  background: linear-gradient(180deg, var(--data-color) 33%, #fff 33%);
-}
-.card.devops {
-  background: linear-gradient(180deg, var(--dev-color) 33%, #fff 33%);
-}
-.card.ux-design {
-  background: linear-gradient(180deg, var(--ux-color) 33%, #fff 33%);
-}
-.card.mobile {
-  background: linear-gradient(180deg, var(--mob-color) 33%, #fff 33%);
-}
-.card.innovation-management {
-  background: linear-gradient(180deg, var(--inov-color) 33%, #fff 33%);
-}
