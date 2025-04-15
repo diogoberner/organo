@@ -5,9 +5,12 @@ import "./TeamDiv.css";
 
 const TeamDiv = ({ membersInCategory, category }) => {
   return (
-    <section className={`team-div`}>
+    <section
+      className={`team-div`}
+      style={{ background: `${category.secondaryColor}` }}
+    >
       <ColorInput category={category} />
-      <Title title={category.category} />
+      <Title category={category} />
       {membersInCategory.length > 0 ? (
         <CardContainer membersList={membersInCategory} />
       ) : (

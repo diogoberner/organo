@@ -4,7 +4,10 @@ import "./SectionHeader.css";
 const SectionHeader = ({ setShowForm, showForm }) => {
   return (
     <header className="section-header">
-      <Title title="Minha Organização:" className="section-header__title" />
+      <Title
+        category={{ category: "Minha Organização:", primaryColor: "#6278F7" }}
+        className="section-header__title"
+      />
       <button
         className="section-header__button"
         onClick={() => {

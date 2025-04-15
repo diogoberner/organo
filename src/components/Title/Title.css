@@ -1,49 +1,22 @@
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .title {
   font-family: var(--font-prata);
   font-size: 32px;
   font-weight: 400;
   position: relative;
   display: inline-block;
+  padding: 10px 0;
 }
 
-.title::after {
-  content: "";
-  margin: 10px auto 40px;
-  background-color: black;
-  display: block;
-  height: 4px;
+.title__underline {
   width: 20%;
-  min-width: 32px;
-}
-
-.programming .title::after {
-  background-color: var(--prog-color);
-}
-
-.front-end .title::after {
-  background-color: var(--front-color);
-}
-
-.data-science .title::after {
-  background-color: var(--data-color);
-}
-
-.devops .title::after {
-  background-color: var(--dev-color);
-}
-
-.ux-design .title::after {
-  background-color: var(--ux-color);
-}
-
-.mobile .title::after {
-  background-color: var(--mob-color);
-}
-
-.innovation-management .title::after {
-  background-color: var(--inov-color);
-}
-
-.section-header__title.title::after {
-  background-color: var(--primary-color-blue);
+  height: 4px;
+  margin-bottom: 30px;
 }
