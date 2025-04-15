@@ -8,12 +8,12 @@ import TeamDiv from "./components/TeamDiv";
 
 import { getTeamMembers } from "./api/teamServices";
 import { TeamContext } from "./context/TeamContext.js";
-
-import { ALL_CATEGORIES } from "./data/categories.js";
+import { CategoryContext } from "./context/CategoryContext.js";
 
 function App() {
-  const { showForm, setShowForm } = useContext(TeamContext);
-  const { teamMembers, setTeamMembers } = useContext(TeamContext);
+  const { showForm, setShowForm, teamMembers, setTeamMembers } =
+    useContext(TeamContext);
+  const { categories } = useContext(CategoryContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,27 +29,27 @@ function App() {
     fetchData();
   }, [setTeamMembers]);
 
-  const categories = useMemo(() => {
-    const uniqueCategories = [...new Set(teamMembers.map((m) => m.category))];
-    return ALL_CATEGORIES.map((c) => c.category).filter((category) =>
-      uniqueCategories.includes(category)
-    );
-  }, [teamMembers]);
+  // const categories = useMemo(() => {
+  //   const uniqueCategories = [...new Set(teamMembers.map((m) => m.category))];
+  //   return ALL_CATEGORIES.map((c) => c.category).filter((category) =>
+  //     uniqueCategories.includes(category)
+  //   );
+  // }, [teamMembers]);
 
   return (
     <div className="App">
       <Banner />
       <Form showForm={showForm} setShowForm={setShowForm} />
       <SectionHeader showForm={showForm} setShowForm={setShowForm} />
-      {categories.map((category) => {
+      {categories.map((c) => {
         const membersInCategory = teamMembers.filter(
-          (member) => member.category === category
+          (member) => member.category === c.category
         );
         return (
           <TeamDiv
-            key={category}
+            key={c.category}
             membersInCategory={membersInCategory}
-            category={category}
+            category={c}
           />
         );
       })}

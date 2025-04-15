@@ -2,10 +2,12 @@ import { useContext } from "react";
 import { deleteMember } from "../../api/teamServices";
 import "./Card.css";
 import { TeamContext } from "../../context/TeamContext.js";
+import { CategoryContext } from "../../context/CategoryContext.js";
 
 const Card = ({ teamMember }) => {
   const { teamMembers, setTeamMembers, setFormData, setShowForm, setEditId } =
     useContext(TeamContext);
+  const { categories } = useContext(CategoryContext);
 
   const handleDelete = async (currentId) => {
     try {
@@ -34,12 +36,16 @@ const Card = ({ teamMember }) => {
     return <p>Carregando...</p>;
   }
 
+  let color = categories.find(
+    (cat) => cat.category === teamMember.category
+  ).primaryColor;
+
   return (
     <div
       data-id={teamMember.id}
       className={`card`}
       style={{
-        background: "linear-gradient(180deg, var(--prog-color) 33%, #fff 33%)",
+        background: `linear-gradient(180deg, ${color} 33%, #fff 33%)`,
       }}
     >
       <div className="card__image">

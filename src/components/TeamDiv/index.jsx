@@ -6,8 +6,8 @@ import "./TeamDiv.css";
 const TeamDiv = ({ membersInCategory, category }) => {
   return (
     <section className={`team-div`}>
-      <ColorInput />
-      <Title title={category} />
+      <ColorInput category={category} />
+      <Title title={category.category} />
       {membersInCategory.length > 0 ? (
         <CardContainer membersList={membersInCategory} />
       ) : (
