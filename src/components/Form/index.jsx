@@ -5,8 +5,7 @@ import FormInput from "../FormInput";
 import FormButton from "../FormButton/index.jsx";
 import { createNewMember, editMember } from "../../api/teamServices.js";
 import { TeamContext } from "../../context/TeamContext.js";
-
-import { ALL_CATEGORIES as categories } from "../../data/categories.js";
+import { CategoryContext } from "../../context/CategoryContext.js";
 
 const Form = () => {
   const formRef = useRef(null);
@@ -20,6 +19,7 @@ const Form = () => {
     setShowForm,
     editId,
   } = useContext(TeamContext);
+  const { categories } = useContext(CategoryContext);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

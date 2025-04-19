@@ -85,13 +85,6 @@
       "id": 27
     },
     {
-      "name": "Djalma Souza",
-      "role": "Gerente Regional",
-      "imgURL": "https://randomuser.me/api/portraits/men/22.jpg",
-      "category": "UX e Design",
-      "id": 28
-    },
-    {
       "id": "1iolgrkr30de86fe626caf7",
       "name": "Diego Santos",
       "role": "Desenvolvedor Sênior",
@@ -118,6 +111,61 @@
       "role": "Especialista em Kubernetes",
       "imgURL": "https://randomuser.me/api/portraits/men/40.jpg",
       "category": "Data Science"
+    }
+  ],
+  "categories": [
+    {
+      "category": "Programação",
+      "primaryColor": "#57C278",
+      "secondaryColor": "#D9F7E9"
+    },
+    {
+      "category": "Front-End",
+      "primaryColor": "#82CFFA",
+      "secondaryColor": "#E8F8FF"
+    },
+    {
+      "category": "Data Science",
+      "primaryColor": "#A6D157",
+      "secondaryColor": "#F0F8E2"
+    },
+    {
+      "category": "DevOps",
+      "primaryColor": "#E06B69",
+      "secondaryColor": "#FDE7E8"
+    },
+    {
+      "category": "UX e Design",
+      "primaryColor": "#DB6EBF",
+      "secondaryColor": "#FAE9F5"
+    },
+    {
+      "category": "Mobile",
+      "primaryColor": "#ffba05",
+      "secondaryColor": "#fff5d9"
+    },
+    {
+      "category": "Inovação e Gestão",
+      "primaryColor": "#ff8a29",
+      "secondaryColor": "#ffeedf"
+    },
+    {
+      "id": "1ip78tasf044cebaa290a35",
+      "category": "Front-End 2",
+      "primaryColor": "#000000",
+      "secondaryColor": "rgba(0, 0, 0, 0.4)"
+    },
+    {
+      "id": "1ip78tp0b06f528bbf431e3",
+      "category": "Front-End 3",
+      "primaryColor": "#000000",
+      "secondaryColor": "rgba(0, 0, 0, 0.4)"
+    },
+    {
+      "id": "1ip7913eh024bd7103a17bf",
+      "category": "Front-End 4",
+      "primaryColor": "#d91717",
+      "secondaryColor": "rgba(217, 23, 23, 0.4)"
     }
   ]
 }

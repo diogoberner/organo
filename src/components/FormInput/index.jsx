@@ -25,8 +25,8 @@ const FormInput = ({
         <>
           <select name="category" value={value} onChange={onChange}>
             <option value=""></option>
-            {categories.map((category, index) => (
-              <option key={index} value={category}>
+            {categories.map((category) => (
+              <option key={category} value={category}>
                 {category}
               </option>
             ))}

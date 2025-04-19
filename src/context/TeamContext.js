@@ -1,6 +1,7 @@
+import { getTeamMembers } from "../api/teamServices";
 import { uid } from "../utils";
 
-const { createContext, useState } = require("react");
+const { createContext, useState, useEffect } = require("react");
 
 export const TeamContext = createContext();
 
@@ -15,6 +16,20 @@ export const TeamProvider = ({ children }) => {
     category: "",
   });
   const [editId, setEditId] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getTeamMembers();
+        setTeamMembers(data);
+      } catch (error) {
+        console.error("Erro ao buscar membros", error);
+        return;
+      }
+    };
+
+    fetchData();
+  }, [setTeamMembers]);
 
   return (
     <TeamContext.Provider
