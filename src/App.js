@@ -9,6 +9,7 @@ import TeamDiv from "./components/TeamDiv";
 import { getTeamMembers } from "./api/teamServices";
 import { TeamContext } from "./context/TeamContext.js";
 import { CategoryContext } from "./context/CategoryContext.js";
+import TeamForm from "./components/TeamForm/index.jsx";
 
 function App() {
   const { showForm, setShowForm, teamMembers, setTeamMembers } =
@@ -29,17 +30,11 @@ function App() {
     fetchData();
   }, [setTeamMembers]);
 
-  // const categories = useMemo(() => {
-  //   const uniqueCategories = [...new Set(teamMembers.map((m) => m.category))];
-  //   return ALL_CATEGORIES.map((c) => c.category).filter((category) =>
-  //     uniqueCategories.includes(category)
-  //   );
-  // }, [teamMembers]);
-
   return (
     <div className="App">
       <Banner />
       <Form showForm={showForm} setShowForm={setShowForm} />
+      <TeamForm />
       <SectionHeader showForm={showForm} setShowForm={setShowForm} />
       {categories.map((c) => {
         const membersInCategory = teamMembers.filter(

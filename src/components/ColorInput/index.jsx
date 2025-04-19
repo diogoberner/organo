@@ -3,11 +3,16 @@ import { useCallback, useContext } from "react";
 import { CategoryContext } from "../../context/CategoryContext";
 import hexToRgba from "hex-to-rgba";
 
-const ColorInput = ({ category }) => {
+const ColorInput = ({ category, value, setColor }) => {
   const { setCategories } = useContext(CategoryContext);
 
   const handleColorChange = useCallback(
     (event) => {
+      if (!category) {
+        setColor(event.target.value);
+        return;
+      }
+
       const newPrimary = event.target.value;
       const newSecondary = hexToRgba(newPrimary, 0.4);
       setCategories((prevCategories) =>
@@ -18,14 +23,14 @@ const ColorInput = ({ category }) => {
         )
       );
     },
-    [category.category, setCategories]
+    [category?.category, setCategories, setColor]
   );
 
   return (
     <input
       className="color-input"
       type="color"
-      value={category.primaryColor}
+      value={category?.primaryColor || value}
       onChange={handleColorChange}
     />
   );

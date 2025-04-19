@@ -111,6 +111,13 @@
       "imgURL": "https://randomuser.me/api/portraits/men/14.jpg",
       "category": "Data Science",
       "id": 30
+    },
+    {
+      "id": "1ip59deff0c5249205ae23f",
+      "name": "Jhonny Castle",
+      "role": "Especialista em Kubernetes",
+      "imgURL": "https://randomuser.me/api/portraits/men/40.jpg",
+      "category": "Data Science"
     }
   ]
 }
