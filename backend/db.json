@@ -85,20 +85,6 @@
       "id": 27
     },
     {
-      "id": "1iolgrkr30de86fe626caf7",
-      "name": "Diego Santos",
-      "role": "Desenvolvedor Sênior",
-      "imgURL": "https://randomuser.me/api/portraits/men/17.jpg",
-      "category": "Programação"
-    },
-    {
-      "name": "Michael jackson",
-      "role": "Cantor Profissional",
-      "imgURL": "https://randomuser.me/api/portraits/men/19.jpg",
-      "category": "Front-End",
-      "id": 29
-    },
-    {
       "name": "Irineu Santos",
       "role": "Você não sabe e nem Eu",
       "imgURL": "https://randomuser.me/api/portraits/men/14.jpg",
@@ -111,61 +97,45 @@
       "role": "Especialista em Kubernetes",
       "imgURL": "https://randomuser.me/api/portraits/men/40.jpg",
       "category": "Data Science"
+    },
+    {
+      "id": "1ip7s32j20540e52a0b67f38",
+      "name": "Clóvis de Barros",
+      "role": "Palestrante",
+      "imgURL": "https://randomuser.me/api/portraits/men/52.jpg",
+      "category": "Filosofia"
     }
   ],
   "categories": [
     {
-      "category": "Programação",
-      "primaryColor": "#57C278",
-      "secondaryColor": "#D9F7E9"
-    },
-    {
-      "category": "Front-End",
-      "primaryColor": "#82CFFA",
-      "secondaryColor": "#E8F8FF"
-    },
-    {
+      "id": "457867",
       "category": "Data Science",
       "primaryColor": "#A6D157",
       "secondaryColor": "#F0F8E2"
     },
     {
+      "id": "234462",
       "category": "DevOps",
       "primaryColor": "#E06B69",
       "secondaryColor": "#FDE7E8"
     },
     {
+      "id": "112675",
       "category": "UX e Design",
       "primaryColor": "#DB6EBF",
       "secondaryColor": "#FAE9F5"
     },
     {
+      "id": "99563",
       "category": "Mobile",
       "primaryColor": "#ffba05",
       "secondaryColor": "#fff5d9"
     },
     {
+      "id": "834223",
       "category": "Inovação e Gestão",
       "primaryColor": "#ff8a29",
       "secondaryColor": "#ffeedf"
-    },
-    {
-      "id": "1ip78tasf044cebaa290a35",
-      "category": "Front-End 2",
-      "primaryColor": "#000000",
-      "secondaryColor": "rgba(0, 0, 0, 0.4)"
-    },
-    {
-      "id": "1ip78tp0b06f528bbf431e3",
-      "category": "Front-End 3",
-      "primaryColor": "#000000",
-      "secondaryColor": "rgba(0, 0, 0, 0.4)"
-    },
-    {
-      "id": "1ip7913eh024bd7103a17bf",
-      "category": "Front-End 4",
-      "primaryColor": "#d91717",
-      "secondaryColor": "rgba(217, 23, 23, 0.4)"
     }
   ]
 }

@@ -14,7 +14,7 @@ const FormInput = ({
       <label>{label}</label>
       {!categories ? (
         <input
-          type={"text"}
+          type="text"
           placeholder={placeholder}
           value={value}
           onChange={onChange}
@@ -23,14 +23,20 @@ const FormInput = ({
         />
       ) : (
         <>
-          <select name="category" value={value} onChange={onChange}>
-            <option value=""></option>
+          <input
+            type="text"
+            list="category-options"
+            placeholder={placeholder}
+            value={value}
+            onChange={onChange}
+            name={name}
+            ref={ref}
+          />
+          <datalist id="category-options">
             {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
+              <option key={category} value={category} />
             ))}
-          </select>
+          </datalist>
         </>
       )}
     </div>

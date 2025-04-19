@@ -11,11 +11,7 @@ const TeamDiv = ({ membersInCategory, category }) => {
     >
       <ColorInput category={category} />
       <Title category={category} />
-      {membersInCategory.length > 0 ? (
-        <CardContainer membersList={membersInCategory} />
-      ) : (
-        <></>
-      )}
+      <CardContainer membersList={membersInCategory} />
     </section>
   );
 };

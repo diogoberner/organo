@@ -13,3 +13,14 @@
   font-weight: 400;
   margin-bottom: 40px;
 }
+
+.form__time {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form__time .color-input {
+  position: static;
+  height: 50px;
+}

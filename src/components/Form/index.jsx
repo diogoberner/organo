@@ -6,6 +6,7 @@ import FormButton from "../FormButton/index.jsx";
 import { createNewMember, editMember } from "../../api/teamServices.js";
 import { TeamContext } from "../../context/TeamContext.js";
 import { CategoryContext } from "../../context/CategoryContext.js";
+import ColorInput from "../ColorInput/index.jsx";
 
 const Form = () => {
   const formRef = useRef(null);
@@ -80,14 +81,17 @@ const Form = () => {
             name="imgURL"
             onChange={handleChange}
           />
-          <FormInput
-            label="Time"
-            placeholder=""
-            categories={categories.map((c) => c.category)}
-            value={formData.category}
-            name="category"
-            onChange={handleChange}
-          />
+          <div className="form__time">
+            <FormInput
+              label="Time"
+              placeholder=""
+              categories={categories.map((c) => c.category)}
+              value={formData.category}
+              name="category"
+              onChange={handleChange}
+            />
+            <ColorInput />
+          </div>
           {editId ? (
             <FormButton label="Editar card" />
           ) : (
