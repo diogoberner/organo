@@ -25,6 +25,14 @@ export const editMember = async (id, updatedMember) => {
   return response.data;
 };
 
+export const editFavorite = async (id, updatedMember) => {
+  const response = await axios.patch(
+    `${BASE_URL}/teamMembers/${id}`,
+    updatedMember
+  );
+  return response.data;
+};
+
 export const getCategories = async () => {
   const response = await axios.get(BASE_URL + "/categories");
   return response.data;

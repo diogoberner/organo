@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { deleteMember } from "../../api/teamServices";
+import { deleteMember, editFavorite } from "../../api/teamServices";
 import "./Card.css";
 import { TeamContext } from "../../context/TeamContext.js";
 import { CategoryContext } from "../../context/CategoryContext.js";
@@ -36,6 +36,18 @@ const Card = ({ teamMember }) => {
     return <p>Carregando...</p>;
   }
 
+  const handleFavorite = (id, favorite) => {
+    const updatedMembers = teamMembers.map((member) => {
+      if (member.id === id) {
+        const updatedMember = { ...member, favorite: !favorite };
+        editFavorite(id, updatedMember);
+        return updatedMember;
+      }
+      return member;
+    });
+    setTeamMembers(updatedMembers);
+  };
+
   let color = categories.find(
     (cat) => cat.category === teamMember.category
   ).primaryColor;
@@ -43,12 +55,14 @@ const Card = ({ teamMember }) => {
   return (
     <div
       data-id={teamMember.id}
-      className={`card`}
+      className={"card"}
       style={{
         background: `linear-gradient(180deg, ${color} 33%, #fff 33%)`,
       }}
     >
-      <div className="card__image">
+      <div
+        className={teamMember.favorite ? "card__image favorite" : "card__image"}
+      >
         <img src={teamMember.imgURL} alt={`Foto do ${teamMember.name}`} />
       </div>
       <div className="card__content">
@@ -61,6 +75,17 @@ const Card = ({ teamMember }) => {
             src="/images/edit-button.png"
             alt={`Botão de editar o ${teamMember.name}`}
             onClick={() => handleEdit(teamMember.id)}
+          />
+        </button>
+        <button className="card__favorite">
+          <img
+            src={
+              teamMember.favorite
+                ? "/images/unfavorite-button.png"
+                : "/images/favorite-button.png"
+            }
+            alt={`Botão de favoritar o ${teamMember.name}`}
+            onClick={() => handleFavorite(teamMember.id, teamMember.favorite)}
           />
         </button>
         <button className="card__delete">

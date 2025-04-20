@@ -5,28 +5,32 @@
       "name": "Bruno Henrique",
       "role": "Engenheiro DevOps",
       "category": "DevOps",
-      "imgURL": "https://randomuser.me/api/portraits/men/11.jpg"
+      "imgURL": "https://randomuser.me/api/portraits/men/11.jpg",
+      "favorite": false
     },
     {
       "id": 12,
       "name": "Ricardo Farias",
       "role": "Administrador de Sistemas",
       "category": "DevOps",
-      "imgURL": "https://randomuser.me/api/portraits/men/12.jpg"
+      "imgURL": "https://randomuser.me/api/portraits/men/12.jpg",
+      "favorite": false
     },
     {
       "id": 13,
       "name": "Tatiane Lima",
       "role": "SRE",
       "category": "DevOps",
-      "imgURL": "https://randomuser.me/api/portraits/women/13.jpg"
+      "imgURL": "https://randomuser.me/api/portraits/women/13.jpg",
+      "favorite": false
     },
     {
       "id": 14,
       "name": "Diego Santos",
       "role": "Especialista em Kubernetes",
       "category": "DevOps",
-      "imgURL": "https://randomuser.me/api/portraits/men/14.jpg"
+      "imgURL": "https://randomuser.me/api/portraits/men/14.jpg",
+      "favorite": true
     },
     {
       "id": 15,
@@ -89,14 +93,16 @@
       "role": "Você não sabe e nem Eu",
       "imgURL": "https://randomuser.me/api/portraits/men/14.jpg",
       "category": "Data Science",
-      "id": 30
+      "id": 30,
+      "favorite": true
     },
     {
       "id": "1ip59deff0c5249205ae23f",
-      "name": "Jhonny Castle",
+      "name": "Jhonny Castlerun",
       "role": "Especialista em Kubernetes",
       "imgURL": "https://randomuser.me/api/portraits/men/40.jpg",
-      "category": "Data Science"
+      "category": "Data Science",
+      "favorite": true
     },
     {
       "id": "1ip7s32j20540e52a0b67f38",
@@ -111,21 +117,16 @@
       "role": "Apresentador",
       "imgURL": "https://randomuser.me/api/portraits/men/93.jpg",
       "category": "Artilheiros do Oeste"
+    },
+    {
+      "name": "Maya Tralli",
+      "role": "Dançarina",
+      "imgURL": "https://randomuser.me/api/portraits/women/91.jpg",
+      "category": "Artilheiros do Oeste",
+      "id": "1ip9pcl7903c6fd1e79edb08"
     }
   ],
   "categories": [
-    {
-      "id": "457867",
-      "category": "Data Science",
-      "primaryColor": "#A6D157",
-      "secondaryColor": "#F0F8E2"
-    },
-    {
-      "id": "234462",
-      "category": "DevOps",
-      "primaryColor": "#E06B69",
-      "secondaryColor": "#FDE7E8"
-    },
     {
       "id": "112675",
       "category": "UX e Design",
@@ -149,6 +150,24 @@
       "category": "Artilheiros do Oeste",
       "primaryColor": "#d46018",
       "secondaryColor": "rgba(212, 96, 24, 0.4)"
+    },
+    {
+      "id": "1ipa25er80ee7ab2c2be4608",
+      "category": "Data Science",
+      "primaryColor": "#3ae443",
+      "secondaryColor": "rgba(58, 228, 67, 0.4)"
+    },
+    {
+      "id": "1ipa25er90ce2befa57bf2b8",
+      "category": "Filosofia",
+      "primaryColor": "#f2ecaa",
+      "secondaryColor": "rgba(242, 236, 170, 0.4)"
+    },
+    {
+      "id": "1ipa2680u0bfa571a2ecdcc",
+      "category": "DevOps",
+      "primaryColor": "#b524f5",
+      "secondaryColor": "rgba(181, 36, 245, 0.4)"
     }
   ]
 }
