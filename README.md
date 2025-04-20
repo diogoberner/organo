@@ -56,4 +56,5 @@ Criar um projeto funcional com estrutura profissional
 Evoluir rumo ao primeiro emprego como desenvolvedor front-end ou full stack
 
 🧔 Sobre o Desenvolvedor
-Sou Diogo, estudante de programação e apaixonado por desenvolvimento web. Cada projeto que desenvolvo é parte do meu propósito de construir uma carreira sólida. Estou sempre em busca da melhor versão de mim, dentro e fora do código.
+
+Sou o Diogo, estudante de programação e apaixonado por desenvolvimento web. Cada projeto que desenvolvo é parte do meu propósito de construir uma carreira sólida. Estou sempre em busca da melhor versão de mim, dentro e fora do código.
