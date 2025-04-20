@@ -3,10 +3,15 @@ import { useContext, useEffect, useRef } from "react";
 import "./Form.css";
 import FormInput from "../FormInput";
 import FormButton from "../FormButton/index.jsx";
-import { createNewMember, editMember } from "../../api/teamServices.js";
+import {
+  createNewCategory,
+  createNewMember,
+  editMember,
+} from "../../api/teamServices.js";
 import { TeamContext } from "../../context/TeamContext.js";
 import { CategoryContext } from "../../context/CategoryContext.js";
-import ColorInput from "../ColorInput/index.jsx";
+import hexToRgba from "hex-to-rgba";
+import { getRandomColor, uid } from "../../utils/index.js";
 
 const Form = () => {
   const formRef = useRef(null);
@@ -23,11 +28,20 @@ const Form = () => {
   const { categories } = useContext(CategoryContext);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value, id: uid() });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const primaryColor = getRandomColor();
+
+    const newCategory = {
+      id: uid(),
+      category: formData.category,
+      primaryColor: primaryColor,
+      secondaryColor: hexToRgba(primaryColor, 0.4),
+    };
 
     try {
       if (editId) {
@@ -39,6 +53,11 @@ const Form = () => {
       } else {
         createNewMember(formData);
         setTeamMembers([...teamMembers, formData]);
+
+        if (!categories.find((cat) => cat.category === formData.category)) {
+          createNewCategory(newCategory);
+          categories.push(newCategory);
+        }
       }
       setFormData({ name: "", role: "", imgURL: "", category: "" });
       setShowForm(!setShowForm);
@@ -90,7 +109,6 @@ const Form = () => {
               name="category"
               onChange={handleChange}
             />
-            <ColorInput />
           </div>
           {editId ? (
             <FormButton label="Editar card" />

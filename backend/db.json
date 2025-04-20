@@ -104,6 +104,13 @@
       "role": "Palestrante",
       "imgURL": "https://randomuser.me/api/portraits/men/52.jpg",
       "category": "Filosofia"
+    },
+    {
+      "id": "1ip9ouqe60cc0427da39637",
+      "name": "Danilo Gentili",
+      "role": "Apresentador",
+      "imgURL": "https://randomuser.me/api/portraits/men/93.jpg",
+      "category": "Artilheiros do Oeste"
     }
   ],
   "categories": [
@@ -136,6 +143,12 @@
       "category": "Inovação e Gestão",
       "primaryColor": "#ff8a29",
       "secondaryColor": "#ffeedf"
+    },
+    {
+      "id": "1ip9ouqs90a0513d706a1d28",
+      "category": "Artilheiros do Oeste",
+      "primaryColor": "#d46018",
+      "secondaryColor": "rgba(212, 96, 24, 0.4)"
     }
   ]
 }

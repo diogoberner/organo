@@ -1,5 +1,4 @@
 import { getTeamMembers } from "../api/teamServices";
-import { uid } from "../utils";
 
 const { createContext, useState, useEffect } = require("react");
 
@@ -9,7 +8,7 @@ export const TeamProvider = ({ children }) => {
   const [teamMembers, setTeamMembers] = useState([]);
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
-    id: uid(),
+    id: "",
     name: "",
     role: "",
     imgURL: "",
