@@ -81,8 +81,8 @@ const Card = ({ teamMember }) => {
           <img
             src={
               teamMember.favorite
-                ? "/images/unfavorite-button.png"
-                : "/images/favorite-button.png"
+                ? "/images/favorite-button.png"
+                : "/images/unfavorite-button.png"
             }
             alt={`Botão de favoritar o ${teamMember.name}`}
             onClick={() => handleFavorite(teamMember.id, teamMember.favorite)}

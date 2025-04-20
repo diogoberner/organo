@@ -94,7 +94,7 @@
       "imgURL": "https://randomuser.me/api/portraits/men/14.jpg",
       "category": "Data Science",
       "id": 30,
-      "favorite": true
+      "favorite": false
     },
     {
       "id": "1ip59deff0c5249205ae23f",
@@ -102,7 +102,7 @@
       "role": "Especialista em Kubernetes",
       "imgURL": "https://randomuser.me/api/portraits/men/40.jpg",
       "category": "Data Science",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": "1ip7s32j20540e52a0b67f38",
@@ -116,14 +116,16 @@
       "name": "Danilo Gentili",
       "role": "Apresentador",
       "imgURL": "https://randomuser.me/api/portraits/men/93.jpg",
-      "category": "Artilheiros do Oeste"
+      "category": "Artilheiros do Oeste",
+      "favorite": true
     },
     {
       "name": "Maya Tralli",
       "role": "Dançarina",
       "imgURL": "https://randomuser.me/api/portraits/women/91.jpg",
       "category": "Artilheiros do Oeste",
-      "id": "1ip9pcl7903c6fd1e79edb08"
+      "id": "1ip9pcl7903c6fd1e79edb08",
+      "favorite": true
     }
   ],
   "categories": [
