@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+🧩 Organo - Sistema de Cadastro de Times e Colaboradores
+Projeto desenvolvido durante os estudos na Alura, com adaptações e incrementos próprios. O Organo é uma aplicação front-end que simula um sistema de gestão de equipes, permitindo o cadastro, edição, exclusão e organização de membros e seus respectivos times.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔧 Funcionalidades Implementadas
+✅ Cadastro de colaboradores com nome, cargo, imagem e time
 
-## Available Scripts
+✅ Listagem de colaboradores organizados por time
 
-In the project directory, you can run:
+✅ Marcar e desmarcar colaboradores como favoritos
 
-### `npm start`
+✅ CRUD completo para colaboradores
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚙️ CRUD parcial para times (cadastro e visualização)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🎨 Personalização das cores de cada time
 
-### `npm test`
+💾 Dados persistidos em uma API fake usando json-server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🧪 Tecnologias e Ferramentas Utilizadas
+HTML5 & CSS3
 
-### `npm run build`
+React.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+useState, useEffect, useContext, useCallback, useRef
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Custom Hook para lógica reutilizável
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Axios – Para requisições HTTP
 
-### `npm run eject`
+json-server – Para simular uma API REST local
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+hex-to-rgba – Para converter e aplicar transparência nas cores
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+💡 Conceitos React Abordados
+Manipulação de estado e efeitos (useState, useEffect)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Compartilhamento de estado com Context API (useContext)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Otimização de funções com useCallback
 
-## Learn More
+Acesso direto a elementos com useRef
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Criação de Custom Hooks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Componentização e organização do projeto em pastas
 
-### Code Splitting
+🎯 Objetivos com o Projeto
+Consolidar os conhecimentos em React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Praticar o consumo de APIs
 
-### Analyzing the Bundle Size
+Aprimorar lógica e estruturação de componentes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Criar um projeto funcional com estrutura profissional
 
-### Making a Progressive Web App
+Evoluir rumo ao primeiro emprego como desenvolvedor front-end ou full stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🧔 Sobre o Desenvolvedor
+Sou Diogo, estudante de programação e apaixonado por desenvolvimento web. Cada projeto que desenvolvo é parte do meu propósito de construir uma carreira sólida. Estou sempre em busca da melhor versão de mim, dentro e fora do código.

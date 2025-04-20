@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://organo-api-nuxm.onrender.com";
 
 export const getTeamMembers = async () => {
   const response = await axios.get(BASE_URL + "/teamMembers");

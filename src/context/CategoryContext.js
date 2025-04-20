@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { deleteCategory, getCategories } from "../api/teamServices";
+import { getCategories } from "../api/teamServices";
 
 export const CategoryContext = createContext();
 

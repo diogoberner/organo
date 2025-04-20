@@ -22,7 +22,7 @@
       "role": "SRE",
       "category": "DevOps",
       "imgURL": "https://randomuser.me/api/portraits/women/13.jpg",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 14,
